@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="맑은 하늘이 열린 날, 서울은 더 넓어집니다. 하늘과 도시가 어우러진 여행 영감을 만나 보세요."
+    />
+    <title>맑은 하늘의 서울 | Seoul Skyline</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <!-- 배경 PNG는 HTML 문서 기준 경로입니다. GitHub Pages 배포 시 assets/hero-bg.png를 같은 저장소에 함께 올려 주세요. -->
+    <link rel="preload" as="image" href="assets/hero-bg.png" />
+    <style>
+      /* 외부 CSS의 url()은 css/ 기준이라, 문서 위치 변동 시를 대비해 사진 주소만 HTML에서 고정합니다. */
+      :root {
+        --page-bg-photo: url("assets/hero-bg.png");
+      }
+    </style>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#hero">맑은 하늘의 서울</a>
+      <nav class="nav" aria-label="메인 메뉴">
+        <a href="#story">날의 이유</a>
+        <a href="#places">어디에서</a>
+        <a href="#experience">어떻게 즐길까</a>
+        <a href="#visit">플랜</a>
+      </nav>
+      <button type="button" class="theme-toggle" aria-label="어두운 모드 전환"></button>
+    </header>
+
+    <main id="main">
+      <section id="hero" class="hero" aria-labelledby="hero-title">
+        <div class="hero__sun" aria-hidden="true"></div>
+        <div class="hero__clouds" aria-hidden="true">
+          <span class="cloud c1"></span>
+          <span class="cloud c2"></span>
+          <span class="cloud c3"></span>
+        </div>
+        <div class="hero__inner">
+          <p class="hero__eyebrow">Clear Sky Seoul</p>
+          <h1 id="hero-title" class="hero__title">
+            맑은 날,<br /><span class="hero__accent">도시 위로 펼치는 서울의 하늘</span>
+          </h1>
+          <p class="hero__lead">
+            푸르고 투명한 하늘 아래에서는 한강의 반사, 남산의 실루엋, 빌딩 사이 길이 더 또렸해요.
+            기분 좋은 가시거리와 함께 서울을 천천히 걸어 보세요.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#places">하늘이 가장 잘 보이는 곳</a>
+            <a class="btn btn--ghost" href="#story">이 도시 하늘이 특별한 이유</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="story" class="section section--story" aria-labelledby="story-title">
+        <div class="section__shell">
+          <div class="section__header">
+            <h2 id="story-title">맑은 하늘이 주는 여유</h2>
+            <p class="section__intro">
+              구름 한 점 적은 날, 서울은 시야 너머로 이어져 보입니다. 멀리 북한산 능선이 닿히고,
+              저녁 노을은 한강 위로 길게 뻗습니다. 같은 거리라도 햇살 각도 하나로 분위기가 달라지죠.
+            </p>
+          </div>
+          <div class="cards cards--three">
+            <article class="card">
+              <h3 class="card__title">가시거리</h3>
+              <p>맑은 대기 속에서 도심 스카이라인과 자연이 함께 보입니다. 단풍과 눈, 봄빛마다 다른 풍경이 펼쳐져요.</p>
+            </article>
+            <article class="card">
+              <h3 class="card__title">빛과 그림자</h3>
+              <p>하늘이 열린 날의 그림자는 또렸고, 거리 소리와 바람까지 선명하게 느껴집니다.</p>
+            </article>
+            <article class="card">
+              <h3 class="card__title">천천히 걷기 좋음</h3>
+              <p>한강 산책로, 성곽길, 마을 언덕까지. 무리하게 채우지 않아도 하루가 충분해요.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="places" class="section section--places" aria-labelledby="places-title">
+        <div class="section__shell">
+          <div class="places__lead">
+            <h2 id="places-title">하늘이 들어오는 명소</h2>
+            <p>언덕 위 전망, 강변의 물결, 궁궐 안마당까지. 높낮이를 바꿔 가며 하늘의 면적을 바꿔 보세요.</p>
+          </div>
+          <div class="place-grid">
+            <article class="place place--featured">
+              <div class="place__tag">River</div>
+              <h3 class="place__title">한강</h3>
+              <p class="place__desc">물결에 비친 구름과 달빛. 피크닉 매트 하나면 충분한 휴식.</p>
+            </article>
+            <article class="place">
+              <div class="place__tag">Hill</div>
+              <h3 class="place__title">남산·인왕산</h3>
+              <p class="place__desc">도시 위 레이어. 해 질 녘 하늘이 길게 이어져요.</p>
+            </article>
+            <article class="place">
+              <div class="place__tag">Heritage</div>
+              <h3 class="place__title">경복궁·창경궁</h3>
+              <p class="place__desc">청사간과 단청 위로 높게 드리운 고요한 하늘.</p>
+            </article>
+            <article class="place">
+              <div class="place__tag">Alley</div>
+              <h3 class="place__title">한옥 마을 산책</h3>
+              <p class="place__desc">기와선과 현대건축 사이로 보이는 하늘의 조각.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section section--experience" aria-labelledby="exp-title">
+        <div class="section__shell experience">
+          <div class="experience__visual" aria-hidden="true">
+            <div class="sky-band"></div>
+            <div class="sky-city"></div>
+          </div>
+          <div class="experience__copy">
+            <h2 id="exp-title">하루 플레이브북</h2>
+            <ol class="timeline">
+              <li>
+                <strong>오전</strong>
+                공원 산책이나 카페 테라스에서 하늘을 한 번 길게 봅니다.
+              </li>
+              <li>
+                <strong>오후</strong>
+                높낮이를 바꾸는 구간을 골라요. 성곽길, 전망대, 또는 강변 자전거.
+              </li>
+              <li>
+                <strong>저녁</strong>
+                맑으면 노을 시간이 더 길어요. 강변에서 천천히 멈춥니다.
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <section id="visit" class="section section--cta" aria-labelledby="cta-title">
+        <div class="section__shell cta-panel">
+          <div class="cta-panel__copy">
+            <h2 id="cta-title">지금 계획을 세워 보세요</h2>
+            <p>
+              미세먼지 지수와 날씨를 확인하고, 비행경로가 깨끗한 날에는 서울의 하늘이 배경으로 크게 펼칩니다.
+              가벼운 옷차림과 여유 시간만 챙겨 오셔도 충분해요.
+            </p>
+            <div class="cta-panel__hints">
+              <span class="hint">외국인관광정보 KTIS</span>
+              <span class="hint">서울시 관광</span>
+              <span class="hint">실시간 날씨·대기 확인</span>
+            </div>
+          </div>
+          <aside class="cta-panel__aside" aria-label="여행 참고 정보">
+            <p class="aside__quote">맑은 날에는 서울이 조금 더 가깝게 느껴져요.</p>
+            <a class="btn btn--primary btn--block" href="https://korean.visitkorea.or.kr/" rel="noopener noreferrer" target="_blank">대한민국 여행 더 알아보기</a>
+            <p class="aside__footnote">링크는 참고용이며 향후 교체 가능합니다.</p>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p class="footer__brand">Clear Sky Seoul</p>
+      <p class="footer__note">
+        로컬에서 <code class="mono">index.html</code>을 열거나 GitHub Pages 등에 배포할 수 있습니다. 산 배경이 보이지 않으면
+        <code class="mono">assets/hero-bg.png</code> 파일이 빌드/배포에 포함됐는지(저장소에 커밋·푸시, 대소문자, .gitignore) 확인해 주세요.
+      </p>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
